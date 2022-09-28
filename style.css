@@ -1,0 +1,161 @@
+resets body,
+ul,
+h1,
+h3,
+p,
+h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9fafc;
+  margin: 10px;
+  overflow: hidden;
+}
+
+header {
+  margin-bottom: 5%;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header a,
+main a {
+  text-decoration: none;
+  font-size: 0.75rem;
+  color: #69696a;
+  padding: 3px 3px 3px 0;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+main section h2 {
+  margin: 3% 0;
+  font-size: 1.5rem;
+}
+.line-and-text {
+  display: flex;
+}
+
+.vertical-line {
+  width: 5px;
+  background-color: #69696a;
+}
+
+main p {
+  font-size: 0.75rem;
+  color: #69696a;
+  margin-left: 2%;
+}
+.button-styling {
+  width: 100%;
+  font-size: 0.75rem;
+  color: #ffffff;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+#cta-button {
+  margin-top: 10px;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(247, 193, 162, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  padding: 10px;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer a {
+  text-decoration: none;
+  color: #69696a;
+  padding: 5px 0 5px 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 0 3px 0 0;
+  }
+  main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  .text-cta {
+    width: 50%;
+  }
+
+  .circle-group {
+    width: 50%;
+    position: relative;
+  }
+
+  .circle-one {
+    width: 200px;
+    height: 200px;
+    background: rgba(247, 136, 167, 0.6);
+    opacity: 80%;
+    border-radius: 50%;
+    position: absolute;
+    right: 75px;
+  }
+
+  .circle-two {
+    width: 175px;
+    height: 175px;
+    background: rgba(247, 193, 162, 0.7);
+    opacity: 80%;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: 100px;
+  }
+  .circle-three {
+    width: 125px;
+    height: 125px;
+    background: rgba(207, 130, 213, 0.6);
+    opacity: 80%;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: 30px;
+  }
+}
